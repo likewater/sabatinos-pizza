@@ -1,3 +1,18 @@
 .red {
-  color: red;
+  color: #E85C37;
 }
+
+.jumbotron {
+  background-color: black;
+  background-image: url(../img/pizza-oven.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #FF9749;
+  text-align: right;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #FFEA9D;
+  }

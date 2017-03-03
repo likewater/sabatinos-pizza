@@ -14,47 +14,43 @@
         <div class="jumbotron">
           <h1>SABATINO'S PIZZA</h1>
         </div>
-
-        <div class="col-md-6">
-          <div class="panel panel-default  panel-info" id="chooseSize">
+        <div class="col-md-4">
+          <div class="panel panel-default  panel-warning" id="chooseSize">
             <div class="panel-heading">
-              <h3 class="panel-title">Choose Your Size</h3>
+              <h3 class="panel-title">1. Choose Your Size</h3>
             </div>
           <div class="panel-body">
-            <form id="pizzaOrder">
-          <!--Begin question 1-->
-          <h5>Choose One Only</h5>
+          <form id="pizzaOrder">
+          <h5>Choose a size.</h5>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Small">
-              Small
+              Small = $8.00
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Medium">
-              Medium
+              Medium = $10.00
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Large">
-              Large
+              Large = $12.00
             </label>
-          </div></br>
-        <!--</form>-->
+            </div></br>
           </div>
         </div>
         </div>
-
-        <div class="col-md-6">
-          <div class="panel panel-default  panel-info" id="chooseTopping">
+        <div class="col-md-4">
+          <div class="panel panel-default  panel-warning" id="chooseTopping">
             <div class="panel-heading">
-              <h3 class="panel-title">Choose Your Toppings</h3>
+              <h3 class="panel-title">2. Choose Your Toppings</h3>
             </div>
           <div class="panel-body">
-            <!--<form id="pizzaToppings">-->
-              <h5>Choose As Many As You Want or None At All.</h5>
+              <h5>Toppings are $1.00 each. Choose as many as you want.</h5>
+              <p class="red">Choose none of you just want our premium cheese pizza.</p>
             <div class="checkbox">
               <label>
                 <input type="checkbox" name="pizzaTops" value="Pepperoni">
@@ -85,26 +81,25 @@
                 Olives
               </label>
             </div></br>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn btn-success">Submit</button>
           </form>
           </div>
         </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="panel panel-default  panel-info" id="confirmation">
+      </div>
+        <div class="col-md-4">
+          <div class="panel panel-default  panel-warning" id="confirmation">
             <div class="panel-heading">
-              <h3 class="panel-title">Confirm Your Order</h3>
+              <h3 class="panel-title">3. Confirm Your Order</h3>
             </div>
-          <div class="panel-body">
-            <p>Base Price: $<span id="basePrice"></span>.00</p>
-            <p>Topping Price: $<span id="toppingPrice"></span>.00</p>
-            <p>Total Price: $<span id="finalPrice"></span>.00</p>
-            <h5 class="red"><span id="discount"></span></h5>
+            <div class="panel-body">
+              <p>Base Price: $<span id="basePrice"></span>.00</p>
+              <p>Topping Price: $<span id="toppingPrice"></span>.00</p>
+              <p>Total Price: $<span id="finalPrice"></span>.00</p>
+              <h5 class="red"><span id="discount"></span></h5>
+              <button type="button" class="btn btn-danger">Order</button>
+            </div>
           </div>
         </div>
-        </div>
-
       </div>
     </div>
   </body>
