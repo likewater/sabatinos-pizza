@@ -28,6 +28,7 @@ The Pizza object can accept multiple topping inputs and store them in an array.|
 | The program can add prices based on size and toppings. | "Small", "Pepperoni" | 9 |
 | The program can add prices and return a final result | 8 + 2 | 10 |
 | The program can give a discount of $1.00 when more than 3 toppings are selected. | 4 toppings | 3 |
+| The program recognizes when no toppings are selected. | 0 | 0 |
 
 ###This is the initial release (1.0).
 

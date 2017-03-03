@@ -42,6 +42,4 @@ Pizza.prototype.finalPriceCalc = function() {
   return finalPrice;
 }
 
-
-
 //-----frontend logic-----
