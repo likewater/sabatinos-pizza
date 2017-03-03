@@ -19,7 +19,7 @@
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
 | The Pizza object can accept pizza size input and store it.| Small | Small |
-| The program denotes selection of a size.| input | Medium |
+| The Pizza object can accept one topping input and store it in an array.| pepperoni | toppings[0] = "pepperoni" |
 | The program can generate a list containing pizza toppings. | Radio Buttons | check all that apply |
 | The program can add | onClick | stop program |
 | The program can add prices based on size and toppings. | onClick | give control to second object |

@@ -1,4 +1,15 @@
+//-----variables-----
+
 //-----business logic-----
-function Pizza(size) {
+function Pizza (size, toppings[]) {
   this.size = size;
 }
+
+
+
+
+
+
+
+
+//-----frontend logic-----
