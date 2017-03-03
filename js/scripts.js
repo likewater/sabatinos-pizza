@@ -58,6 +58,13 @@ $(document).ready(function() {
     pizzaOne = new Pizza (pizzaSize, pizzaToppings);
     console.log(pizzaOne.size);
     console.log(pizzaOne.toppings);
+    priceOne = Pizza.prototype.sizePriceCalc();
+    priceTwo = Pizza.prototype.toppingPriceCalc();
+    priceThree = Pizza.prototype.finalPriceCalc();
+    console.log(priceThree);
+    $("#basePrice").html(priceOne);
+    $("#toppingPrice").html(priceTwo);
+    $("#finalPrice").html(priceThree);
   });
 });
 
