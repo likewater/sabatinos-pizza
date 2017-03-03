@@ -14,31 +14,85 @@
         <div class="jumbotron">
           <h1>SABATINO'S PIZZA</h1>
         </div>
-        
+
         <div class="col-md-6">
-          <div class="panel panel-default  panel-primary" id="chooseSize">
+          <div class="panel panel-default  panel-info" id="chooseSize">
             <div class="panel-heading">
               <h3 class="panel-title">Choose Your Size</h3>
             </div>
           <div class="panel-body">
-            <p>PPPPPP</p>
+            <form id="pizzaSize">
+          <!--Begin question 1-->
+          <h5>Choose One Only</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Small">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Large">
+              Large
+            </label>
+          </div></br>
+        <!--</form>-->
           </div>
         </div>
         </div>
 
         <div class="col-md-6">
-          <div class="panel panel-default  panel-primary" id="chooseTopping">
+          <div class="panel panel-default  panel-info" id="chooseTopping">
             <div class="panel-heading">
               <h3 class="panel-title">Choose Your Toppings</h3>
             </div>
           <div class="panel-body">
-            <p>PPPPP</p>
+            <!--<form id="pizzaToppings">-->
+              <h5>Choose As Many As You Want or None At All.</h5>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pizzaTops" value="pizzaTops1">
+                Pepperoni
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pizzaTops" value="pizzaTops2">
+                Sausage
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pizzaTops" value="pizzaTops3">
+                Ham
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pizzaTops" value="pizzaTops4">
+                Veggies
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="pizzaTops" value="pizzaTops5">
+                Olives
+              </label>
+            </div></br>
+            <button type="submit" class="btn">Submit</button>
+          </form>
           </div>
         </div>
         </div>
 
         <div class="col-md-12">
-          <div class="panel panel-default  panel-primary" id="confirmation">
+          <div class="panel panel-default  panel-info" id="confirmation">
             <div class="panel-heading">
               <h3 class="panel-title">Confirm Your Order</h3>
             </div>
