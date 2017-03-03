@@ -15,4 +15,13 @@
 
 body {
   background-color: #FFEA9D;
+  color: #333333;
   }
+
+h3 {
+  color: #403A27;
+}
+
+#submitButton {
+  background-color: #69A6CC;
+}
