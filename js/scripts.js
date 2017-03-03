@@ -15,7 +15,7 @@ Pizza.prototype.sizePriceCalc = function() {
     sizePrice = 8;
   }
   if (pizzaOne.size === "Medium") {
-    sizePrice = 10;
+    sizePrice =  10;
   }
   if (pizzaOne.size === "Large") {
     sizePrice = 12;
@@ -24,9 +24,11 @@ Pizza.prototype.sizePriceCalc = function() {
 }
 
 Pizza.prototype.toppingPriceCalc = function() {
+  if (pizzaOne.toppings.length > 0) {
   pizzaOne.toppings.forEach(function(topPrice) {
     console.log(topPrice + " is $1:00 extra!")
   });
+}
   toppingPrice = pizzaOne.toppings.length;
   if (toppingPrice > 3) {
     toppingPrice = toppingPrice - 1;
