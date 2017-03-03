@@ -27,13 +27,11 @@ Pizza.prototype.sizePriceCalc = function() {
 Pizza.prototype.toppingPriceCalc = function() {
   if (pizzaOne.toppings.length > 0) {
   pizzaOne.toppings.forEach(function(topPrice) {
-    console.log(topPrice + " is $1:00 extra!")
   });
 }
   toppingPrice = pizzaOne.toppings.length;
   if (toppingPrice > 3) {
     toppingPrice = toppingPrice - 1;
-    console.log("You get a discount of $1:00!")
   }
   return toppingPrice;
 }
@@ -49,40 +47,20 @@ $(document).ready(function() {
 
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    console.log("submit function called")
     var pizzaSize = $("input:radio[name=size]:checked").val();
     //var toppings = $("input:checkbox[name=pizzaTops]:checked").val();
     var pizzaToppings = $("input:checkbox[name=pizzaTops]:checked").map(function() {
       return $(this).val();
     }).get();
     pizzaOne = new Pizza (pizzaSize, pizzaToppings);
-    console.log(pizzaOne.size);
-    console.log(pizzaOne.toppings);
     priceOne = Pizza.prototype.sizePriceCalc();
     priceTwo = Pizza.prototype.toppingPriceCalc();
     priceThree = Pizza.prototype.finalPriceCalc();
-    console.log(priceThree);
     $("#basePrice").html(priceOne);
     $("#toppingPrice").html(priceTwo);
     $("#finalPrice").html(priceThree);
+    if (pizzaOne.toppings.length > 3) {
+      $("#discount").html("You received a discount of $1:00!");
+    }
   });
 });
-
-    // $("input:radio[name=commit]:checked").val();
-    // if (readyToLearn === "yes"){
-    //   $("#nextSteps").show();
-    // } else if (readyToLearn === "no"){
-    //   $("#moreInfo").show();
-    //}
-
-    // $("form#playGame").submit(function(event) {
-    //      event.preventDefault();
-    //      console.log("submit function called")
-    //      var inputtedName = $("input#playerOne").val();
-    //      var newPlayer = new Player(inputtedName);
-    //      Players.push(newPlayer);
-    //      // DISPLAY MESSAGE FOR PLAYER ONE TO GO FIRST
-    //      console.log(Players[0]);
-    //      var newPlayer = new Player ("Computer");
-    //      Players.push(newPlayer);
-    //      console.log(Players[1]);
