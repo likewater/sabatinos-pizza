@@ -32,6 +32,8 @@ The Pizza object can accept multiple topping inputs and store them in an array.|
 
 ###This is the initial release (1.0).
 
+###Check out my page on gh-pages: https://likewater.github.io/sabatinos-pizza/
+
 #Built with the following tools:
 
 * Atom (https://atom.io/)
