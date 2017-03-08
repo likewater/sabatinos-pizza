@@ -18,17 +18,14 @@
 
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
-| The Pizza object can accept pizza size input and store it.| "Small" | "Small" |
-| The Pizza object can accept one topping input and store it in an array.| "pepperoni" | toppings[0] = "pepperoni" |
-The Pizza object can accept multiple topping inputs and store them in an array.| "pepperoni", "olives" | toppings[0] = "pepperoni", toppings[1] = "olives" |
-| The program can calculate and display the price of a small pizza. | "Small" | 8 |
-| The program can calculate and display the price of any pizza based on size. | "Small", "Medium" or "Large" | 8, 10 or 12  |
-| The program can calculate and display the price of one topping. | "Olives" | 1 |
-| The program can calculate and display the price of many toppings. | "Olives", "Pepperoni" | 2 |
-| The program can add prices based on size and toppings. | "Small", "Pepperoni" | 9 |
-| The program can add prices and return a final result | 8 + 2 | 10 |
-| The program can give a discount of $1.00 when more than 3 toppings are selected. | 4 toppings | 3 |
-| The program recognizes when no toppings are selected. | 0 | 0 |
+| Pizza size can be selected.| "Small" | "Small" |
+| One topping can be added to the pizza.| "Pepperoni" | "Pepperoni" |
+| Multiple toppings can be added to the pizza.| "Pepperoni", "Olives" | "Pepperoni", "Olives" |
+| No toppings selected denotes a cheese pizza. | "None" | "Cheese" |
+| Pizza toppings are 1 dollar each. | "Pepperoni", "Olives" | 2 dollars |
+| A discount of $1.00 is given when more than 3 toppings are selected. | 4 toppings | 3 dollars |
+| Three sizes are available and priced accordingly. | "Small", "Medium" or "Large" | 8, 10 or 12 dollars |
+| Pizza price is calculated based on size and number of toppings. | "Medium", "Olives", "Pepperoni" | 12 dollars |
 
 ###This is the initial release (1.0).
 
