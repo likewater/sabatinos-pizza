@@ -18,14 +18,13 @@
 
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
-| Pizza size can be selected.| "Small" | "Small" |
 | One topping can be added to the pizza.| "Pepperoni" | "Pepperoni" |
 | Multiple toppings can be added to the pizza.| "Pepperoni", "Olives" | "Pepperoni", "Olives" |
-| No toppings selected denotes a cheese pizza. | "None" | "Cheese" |
-| Pizza toppings are 1 dollar each. | "Pepperoni", "Olives" | 2 dollars |
-| A discount of $1.00 is given when more than 3 toppings are selected. | 4 toppings | 3 dollars |
-| Three sizes are available and priced accordingly. | "Small", "Medium" or "Large" | 8, 10 or 12 dollars |
-| Pizza price is calculated based on size and number of toppings. | "Medium", "Olives", "Pepperoni" | 12 dollars |
+| No toppings added denotes a cheese pizza. | "None" | "Cheese" |
+| Pizza toppings are correctly priced at a 1 dollar each. | "Pepperoni", "Olives" | 2 dollars |
+| A discount of 1 dollar is given when more than 3 toppings are added. | 4 toppings | 3 dollars |
+| Pizza sizes are correctly priced. | "Small", "Medium" or "Large" | 8, 10 or 12 dollars |
+| Pizza price is calculated based on size and number of toppings added. | "Medium", "Olives", "Pepperoni" | 12 dollars |
 
 ###This is the initial release (1.0).
 
