@@ -1,12 +1,12 @@
-# _Sabatino's Pizza_
+#_Sabatino's Pizza_
 
-#### Order the Best Pizza Easily!
+####Order the Best Pizza Easily!
 
-### By Blake Womack
+###By Blake Womack
 
-## Description
+##Description
 
-#### User Instructions:
+####User Instructions:
 
 * Choose your size.
 * Choose your toppings.
@@ -14,7 +14,7 @@
 * Confirm your order.
 * Place your order.
 
-### Specifications
+###Specifications
 
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
